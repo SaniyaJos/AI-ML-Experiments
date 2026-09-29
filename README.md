@@ -1,6 +1,4 @@
-# AI & ML Lab
-
-This repository contains the implementations and experiments completed as part of the **Artificial Intelligence and Machine Learning Lab**.
+# AI & ML Experiments
 
 The work covers **data preprocessing, search algorithms, decision tree learning, regression, and other machine learning models** using Python.
 

@@ -1,177 +1,69 @@
+
 # AI & ML Experiments
 
-The work covers **data preprocessing, search algorithms, decision tree learning, regression, and other machine learning models** using Python.
-
-
+This repository contains implementations of AI/ML experiments using Python and Google Colab. It covers data preprocessing, search algorithms, regression, classification, clustering, and neural networks.
 
 ## Experiments
 
 ### 1. Data Preprocessing
-
 **Notebook:** `AI_ML_Lab_Exercise_1.ipynb`
 
-This experiment focuses on preprocessing and preparing a student performance dataset for machine learning.
-
-#### Tasks Performed
-
-- Data Loading
-- Missing Value Handling
-- Duplicate Removal
-- Outlier Detection
-- Label Encoding
-- One-Hot Encoding
-- Feature Scaling
-- Correlation Analysis
-- Feature Engineering
-- Train-Test Split
-- Dataset Export
-
-#### Dataset
-
-**Student Performance Dataset (Kaggle)**
-
-#### Output
-
-The cleaned dataset saved as:
-
-`cleaned_student_performance.csv`
-
----
+Covers data cleaning, missing value handling, duplicate removal, outlier detection, encoding, feature scaling, correlation analysis, feature engineering, and train-test splitting using a student performance dataset.
 
 ### 2. Search Algorithms
 
-This section contains implementations of different search strategies used in Artificial Intelligence.
+Implementations of fundamental AI search and graph traversal algorithms.
 
-#### A* Algorithm
-
-**Notebook:** `A_algorithm.ipynb`
-
-Implementation of the **A\*** search algorithm.
-
-The evaluation function used by A* is:
-
-\[
-f(n) = g(n) + h(n)
-\]
-
-where:
-
-- `g(n)` is the cost from the start node to node `n`
-- `h(n)` is the heuristic estimate from node `n` to the goal
-
----
-
-#### Greedy Best-First Search
-
-**Notebook:** `Greedy_Best_First_Search.ipynb`
-
-Implementation of the **Greedy Best-First Search** algorithm using heuristic-based node selection.
-
----
-
-#### Uniform Cost Search
-
-**Notebook:** `UCS_algorithm.ipynb`
-
-Implementation of the **Uniform Cost Search (UCS)** algorithm, which selects nodes based on their path cost from the starting node.
-
----
-
-#### Breadth-First Search and Depth-First Search
-
-**Notebook:** `bfs,dfs.ipynb`
-
-Implementation of two fundamental graph traversal/search algorithms:
-
-- Breadth-First Search (BFS)
-- Depth-First Search (DFS)
-
----
+- **A* Search:** `A_algorithm.ipynb`
+- **Greedy Best-First Search:** `Greedy_Best_First_Search.ipynb`
+- **Uniform Cost Search:** `UCS_algorithm.ipynb`
+- **BFS and DFS:** `bfs,dfs.ipynb`
 
 ### 3. Decision Tree Learning
-
-#### ID3 Algorithm
-
 **Notebook:** `ID3_Algorithm.ipynb`
 
-Implementation of the **ID3 decision tree algorithm**.
-
-The experiment focuses on constructing a decision tree using the ID3 approach.
-
----
+Implements the ID3 algorithm for decision tree construction using information gain.
 
 ### 4. Regression
 
-#### Linear Regression
+- **Linear Regression:** `Linear_Regression.ipynb`
+- **Regression Model Comparison:** `Random_forest,Decision_tree,SVM_Regression.ipynb`
 
-**Notebook:** `Linear_Regression.ipynb`
+Explores Linear Regression, Random Forest Regression, Decision Tree Regression, and Support Vector Regression using a used-car dataset.
 
-Implementation of **Linear Regression** using the provided regression dataset.
+### 5. Artificial Neural Network
+**Notebook:** `ANN.ipynb`
 
-**Dataset:**
+Demonstrates an Artificial Neural Network using the backpropagation algorithm, including error calculation and weight updates.
 
-`used_car_regression_lab_dataset.xlsx`
+### 6. K-Means Clustering
+**Notebook:** `K_Means_clustering.ipynb`
 
----
+Implements K-Means clustering to group data points based on similarities in their features.
 
-#### Regression Model Comparison
+### 7. Logistic Regression
+**Notebook:** `Logistic_Regression.ipynb`
 
-**Notebook:** `Random_forest,Decision_tree,SVM_Regression.ipynb`
+Implements Logistic Regression for classification using a machine learning dataset.
 
-This notebook contains regression-related implementations involving:
+## Datasets
 
-- Random Forest
-- Decision Tree
-- Support Vector Machine (SVM) Regression
+- `student_performance_updated_1000-selected-...` – Student performance dataset.
+- `cleaned_student_performance.csv` – Preprocessed student performance data.
+- `used_car_regression_lab_dataset.xlsx` – Dataset for regression experiments.
+- `heart.csv` – Dataset used for Random_forest,Decision_tree,SVM_Regression experiment.
 
----
-
-## 📂 Datasets
-
-The repository contains the datasets used in the experiments.
-
-| Dataset | Purpose |
-|---|---|
-| `cleaned_student_performance.csv` | Cleaned output from the data preprocessing experiment |
-| `student_performance_updated_1000-selected-...` | Student performance dataset |
-| `used_car_regression_lab_dataset.xlsx` | Dataset used for regression experiments |
-| `heart.csv` | Dataset taken for machine learning experiments |
-
----
-
-## 🛠️ Tools & Technologies
+## Technologies Used
 
 - Python
 - Google Colab
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
+- Pandas and NumPy
+- Matplotlib and Seaborn
 - Scikit-learn
 
----
+## How to Run
 
-## 📁 Repository Structure
-
-```text
-AI-ML-Lab/
-│
-├── AI_ML_Lab_Exercise_1.ipynb
-│
-├── Search Algorithms/
-│   ├── A_algorithm.ipynb
-│   ├── Greedy_Best_First_Search.ipynb
-│   ├── UCS_algorithm.ipynb
-│   └── bfs,dfs.ipynb
-│
-├── ID3_Algorithm.ipynb
-│
-├── Linear_Regression.ipynb
-├── Random_forest,Decision_tree,SVM_Regression.ipynb
-│
-├── cleaned_student_performance.csv
-├── student_performance_updated_1000-selected-...
-├── used_car_regression_lab_dataset.xlsx
-├── heart.csv
-│
-└── README.md
+1. Clone or download this repository.
+2. Open the required Jupyter notebook in Google Colab.
+3. Upload the corresponding dataset if required.
+4. Run the cells sequentially to execute the experiment.
